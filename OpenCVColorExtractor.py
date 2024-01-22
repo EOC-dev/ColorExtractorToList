@@ -26,8 +26,8 @@ else:
   filename, file_ext = os.path.splitext(args.I)
 
   #Create the names of the output files by prefixing the filenames with the input filename
-  color_list_file = '{}_PixelColor_List.txt'.format(filename)
-  color_table_file = '{}_Color_LookupTable.txt'.format(filename)
+  color_list_file = '{}_ColorList.txt'.format(filename)
+  color_table_file = '{}_ColorLookupTable.txt'.format(filename)
 
   #Extract the width and height of the image using numpy
   height, width, _ = img.shape #Numpy returns a tuple, that why the _ is there since we just need height and width
